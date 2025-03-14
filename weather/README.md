@@ -65,7 +65,7 @@
    - 例外発生時にはエラーログを記録
 
 ## フォルダ構造
-
+<pre>
 .
 ├── myproject
 │ ├── **init**.py
@@ -98,7 +98,7 @@
 ├── README.md
 ├── requirements.txt
 └── .env
-
+</pre>
 ## 主要ファイル
 
 ## weather/views.py - メインの処理ロジック
