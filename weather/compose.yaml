@@ -1,24 +1,24 @@
 services:
-  postgres:
-    image: postgres:16
-    container_name: postgres_container
-    environment:
-      POSTGRES_DB: weather
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: pass-app
-    volumes:
-      - db-data:/var/lib/postgresql/data
+    postgres:
+        image: postgres:16
+        container_name: postgres_container
+        environment:
+            POSTGRES_DB: weather
+            POSTGRES_USER: user
+            POSTGRES_PASSWORD:
+        volumes:
+            - db-data:/var/lib/postgresql/data
 
-  django:
-    build: .
-    container_name: django_container
-    tty: true
-    depends_on:
-      - postgres
-    ports:
-      - "8000:8000"
-    volumes:
-      - .:/code
+    django:
+        build: .
+        container_name: django_container
+        tty: true
+        depends_on:
+            - postgres
+        ports:
+            - "8000:8000"
+        volumes:
+            - .:/code
 
 volumes:
-  db-data:
+    db-data:
