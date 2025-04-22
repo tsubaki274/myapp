@@ -10,6 +10,12 @@
 - レスポンシブデザイン（モバイル、タブレット、デスクトップに対応）
 - ダークモード UI で目に優しい表示
 
+- ## 初期画面
+![Image](https://github.com/user-attachments/assets/eae77dea-1502-4407-a700-51f5006ceee9)
+
+##  検索後
+![Image](https://github.com/user-attachments/assets/51b7e36b-8c6f-4db8-9d04-84ee8e105de8)
+
 ## 技術スタック
 
 - **バックエンド**: Django 4.2.4
@@ -59,7 +65,7 @@
    - 例外発生時にはエラーログを記録
 
 ## フォルダ構造
-
+<pre>
 .
 ├── myproject
 │ ├── **init**.py
@@ -92,7 +98,7 @@
 ├── README.md
 ├── requirements.txt
 └── .env
-
+</pre>
 ## 主要ファイル
 
 ## weather/views.py - メインの処理ロジック
